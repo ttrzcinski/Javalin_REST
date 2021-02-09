@@ -73,25 +73,22 @@
 			</plugin>
 			<plugin>
 				<groupId>com.spotify</groupId>
-				<artifactId>dockerfile-maven-plugin</artifactId>
+				<artifactId>docker-maven-plugin</artifactId>
 				<version>${dockerfile.maven.plugin}</version>
-				<executions>
-					<execution>
-						<id>default</id>
-						<goals>
-							<goal>build</goal>
-							<goal>push</goal>
-						</goals>
-					</execution>
-				</executions>
 				<configuration>
-					<repository>localhost:5000/javalin</repository>
-					<tag>${project.version}</tag>
-					<buildArgs>
-						<JAR_FILE>${project.build.finalName}-shaded.jar</JAR_FILE>
-					</buildArgs>
+				  <imageName>javalin_rest</imageName>
+				  <baseImage>java</baseImage>
+				  <entryPoint>["java", "-jar", "/${project.build.finalName}.jar"]</entryPoint>
+				  <!-- copy the service's jar file from target into the root directory of the image --> 
+				  <resources>
+					 <resource>
+					   <targetPath>/</targetPath>
+					   <directory>${project.build.directory}</directory>
+					   <include>${project.build.finalName}.jar</include>
+					 </resource>
+				  </resources>
 				</configuration>
-			</plugin>
+			  </plugin>
 		</plugins>
 	</build>
 </project>
