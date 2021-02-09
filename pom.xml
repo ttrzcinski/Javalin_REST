@@ -26,13 +26,13 @@
 		</dependency>
 	</dependencies>
 
-	<!--<distributionManagement>
+	<distributionManagement>
 		<snapshotRepository>
 			<id>snapshots</id>
 			<name>Internal Snapshot Releases</name>
 			<url>your-snapshot-repo-url</url>
 		</snapshotRepository>
-	</distributionManagement>-->
+	</distributionManagement>
 
 	<build>
 		<plugins>
