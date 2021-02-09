@@ -25,6 +25,13 @@ hs_err_pid*
 # Output catalogs
 target/*
 
+# Config
+.classpath
+.project
+.settings
+.vscode
+
+
 # IJ project
 .idea
 .idea/*
