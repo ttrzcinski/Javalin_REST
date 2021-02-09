@@ -24,3 +24,7 @@ hs_err_pid*
 
 # Output catalogs
 target/*
+
+# IJ project
+.idea
+.idea/*
