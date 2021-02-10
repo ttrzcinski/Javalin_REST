@@ -21,21 +21,21 @@
         <mockito.version>3.7.7</mockito.version>
         <junit.version>5.7.1</junit.version>
         <konghg.unirest>3.4.00</konghg.unirest>
-	<assertj.core>3.11.1</assertj.core>
-	<io.mockk>1.9.3</io.mockk>
-	<slf4j.version>1.7.28</slf4j.version>
+        <assertj.core>3.11.1</assertj.core>
+        <io.mockk>1.9.3</io.mockk>
+        <slf4j.version>1.7.28</slf4j.version>
     </properties>
 
     <!-- library dependencies -->
     <dependencies>
-	<!-- Core library -->
+	    <!-- Core library -->
         <dependency>
             <groupId>io.javalin</groupId>
             <artifactId>javalin</artifactId>
             <version>${javalin.version}</version>
         </dependency>
-	<!-- Logging -->
-	<dependency>
+	    <!-- Logging -->
+	    <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
             <version>${slf4j.version}</version>
@@ -47,7 +47,7 @@
             <version>${mockito.version}</version>
             <scope>test</scope>
         </dependency>
-	<dependency>
+	    <dependency>
             <groupId>io.mockk</groupId>
             <artifactId>mockk</artifactId>
             <version>${io.mockk}</version>
@@ -59,7 +59,7 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
-	<dependency>
+	    <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
             <version>${assertj.core}</version>
