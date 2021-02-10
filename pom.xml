@@ -32,8 +32,8 @@
 	<distributionManagement>
 		<snapshotRepository>
 			<id>snapshots</id>
-			<name>Internal Snapshot Releases</name>
-			<url>your-snapshot-repo-url</url>
+			<name>GitHub Releases</name>
+			<url>https://github.com/ttrzcinski/Javalin_REST/releases</url>
 		</snapshotRepository>
 	</distributionManagement>
 
