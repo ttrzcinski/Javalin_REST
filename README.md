@@ -8,10 +8,10 @@ Represents dockerized Javalin REST microsevice with GET example in.
 https://javalin.io/tutorials/docker
 
 # Parts:
-- JDK 1.8
+- JDK 11
 - Javalin
 - Docker
 
 # Contributors:
-Prasad Marne
-Tomasz Trzciński
+- Prasad Marne
+- Tomasz Trzciński
