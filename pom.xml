@@ -17,6 +17,7 @@
 		<maven.compiler.plugin>2.3.2</maven.compiler.plugin>
 		<maven.shade.plugin>3.1.0</maven.shade.plugin>
 		<dockerfile.maven.plugin>1.2.2</dockerfile.maven.plugin>
+		<javalin.version>3.13.0</javalin.version>
 	</properties>
 
 	<!-- library dependencies -->
@@ -24,7 +25,7 @@
 		<dependency>
 			<groupId>io.javalin</groupId>
 			<artifactId>javalin</artifactId>
-			<version>1.0.1</version>
+			<version>${javalin.version}</version>
 		</dependency>
 	</dependencies>
 
