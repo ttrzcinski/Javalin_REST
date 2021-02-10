@@ -11,9 +11,8 @@ RUN mvn dependency:go-offline -B
 RUN mvn clean install package
 
 FROM openjdk:8-jre-alpine
-# Check existence of that JAR
-RUN find . -name "*.jar"
-
 # Add the service itself
-ARG JAR_FILE
-COPY target/${JAR_FILE} /usr/share/javalin/my-javalin.jar
+COPY --from=maven  target/my-javalin-*.jar /usr/share/javalin/
+
+# Run the Web API
+CMD ["java", "-jar", "/usr/share/javalin/my-javalin.jar"]
