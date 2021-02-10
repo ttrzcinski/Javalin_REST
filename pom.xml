@@ -18,6 +18,8 @@
 		<maven.shade.plugin>3.1.0</maven.shade.plugin>
 		<dockerfile.maven.plugin>1.2.2</dockerfile.maven.plugin>
 		<javalin.version>3.13.3</javalin.version>
+		<mockito.version>3.7.7</mockito.version>
+		<junit.version>5.7.1</junit.version>
 	</properties>
 
 	<!-- library dependencies -->
@@ -27,13 +29,25 @@
 			<artifactId>javalin</artifactId>
 			<version>${javalin.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<version>${mockito.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 
 	<distributionManagement>
 		<snapshotRepository>
 			<id>snapshots</id>
 			<name>GitHub Releases</name>
-			<url>https://github.com/ttrzcinski/Javalin_REST/releases</url>
+			<url>https://github.com/ttrzcinski/Javalin_REST</url>
 		</snapshotRepository>
 	</distributionManagement>
 
