@@ -5,9 +5,6 @@ ENTRYPOINT ["/usr/bin/java", "-jar", "/usr/share/javalin/my-javalin.jar"]
 
 # Check existence of that JAR
 RUN find . -name "*.jar"
-# CMD ["cd", "/usr/bin/java"]
-# RUN ls
-# CMD ["cd", "../../.."]
 
 # Add the service itself
 ARG JAR_FILE
