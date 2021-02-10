@@ -16,4 +16,4 @@ RUN find . -name "*.jar"
 
 # Add the service itself
 ARG JAR_FILE
-ADD target/${JAR_FILE} /usr/share/javalin/my-javalin.jar
+COPY target/${JAR_FILE} /usr/share/javalin/my-javalin.jar
