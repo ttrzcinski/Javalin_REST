@@ -6,7 +6,7 @@
 
     <groupId>com.ttrzcinski.rest.java</groupId>
     <artifactId>hell-on-world-rest</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -38,8 +38,8 @@
             <artifactId>javalin-bundle</artifactId>
             <version>${javalin.version}</version>
         </dependency>
-	    <!-- Logging -->
-	    <dependency>
+	<!-- Logging -->
+	<dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
             <version>${slf4j.version}</version>
@@ -51,7 +51,7 @@
             <version>${mockito.version}</version>
             <scope>test</scope>
         </dependency>
-	    <dependency>
+	<dependency>
             <groupId>io.mockk</groupId>
             <artifactId>mockk</artifactId>
             <version>${io.mockk}</version>
@@ -65,7 +65,7 @@
             <scope>test</scope>
         </dependency>
         <!-- Extended assertions -->
-	    <dependency>
+	<dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
             <version>${assertj.core}</version>
