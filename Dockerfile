@@ -10,7 +10,7 @@ RUN mvn dependency:go-offline -B
 # RUN mvn package
 RUN mvn clean install package
 
-FROM openjdk:11.0-jre
+FROM openjdk:11.0.10-jre
 # Add the service itself
 COPY --from=maven  target/hell-on-world-rest-*.jar /usr/share/javalin/
 
