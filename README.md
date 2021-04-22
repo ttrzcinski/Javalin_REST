@@ -15,3 +15,4 @@ https://javalin.io/tutorials/docker
 # Contributors:
 - Prasad Marne
 - Tomasz Trzciński
+- Snyk bot
