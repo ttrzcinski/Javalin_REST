@@ -23,7 +23,7 @@
         <konghg.unirest>3.4.00</konghg.unirest>
         <assertj.core>3.11.1</assertj.core>
         <io.mockk>1.9.3</io.mockk>
-        <slf4j.version>1.7.28</slf4j.version>
+        <slf4j.version>[1.7.30,)</slf4j.version>
         <surefire.plugin>2.22.2</surefire.plugin>
         <surefire.provider>1.3.2</surefire.provider>
         <bonigarcia.webdrivermanager>3.6.2</bonigarcia.webdrivermanager>
