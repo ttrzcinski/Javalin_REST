@@ -17,7 +17,7 @@
         <maven.compiler.plugin>2.4</maven.compiler.plugin>
         <maven.shade.plugin>3.1.0</maven.shade.plugin>
         <dockerfile.maven.plugin>1.2.2</dockerfile.maven.plugin>
-        <javalin.version>4.2.0</javalin.version>
+        <javalin.version>4.4.0</javalin.version>
         <mockito.version>3.7.7</mockito.version>
         <junit.version>5.7.1</junit.version>
         <konghg.unirest>3.4.00</konghg.unirest>
@@ -95,7 +95,7 @@
 	<dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.13.0</version>
+            <version>2.13.2.1</version>
 	</dependency>
     </dependencies>
 
