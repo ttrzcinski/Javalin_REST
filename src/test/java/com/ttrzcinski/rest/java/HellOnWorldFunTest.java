@@ -1,15 +1,14 @@
 package com.ttrzcinski.rest.java;
 
-import com.ttrzcinski.rest.java.HellApp;
 import kong.unirest.HttpResponse;
 import kong.unirest.Unirest;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class HellOnWorld_FunTest {
+public class HellOnWorldFunTest {
 
-    private HellApp app = new HellApp();
+    private final HellApp app = new HellApp();
 
     @Test
     public void GET_hell_on_world_as_200() {
@@ -18,7 +17,7 @@ public class HellOnWorld_FunTest {
         String tested_url = String.format("http://localhost:%d/", tested_port);
         app.start(tested_port);
         // Act
-        HttpResponse response = Unirest.get(tested_url).asString();
+        HttpResponse<String> response = Unirest.get(tested_url).asString();
         // Assert
         assertThat(response != null).isTrue();
         assertThat(response.getStatus()).isEqualTo(200);

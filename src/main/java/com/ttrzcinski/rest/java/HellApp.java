@@ -9,7 +9,7 @@ public class HellApp {
 
     public static final int HELLAPP_DEFAULT_PORT = 7000;
 
-    private Javalin app = Javalin.create().routes(() -> {
+    private final Javalin app = Javalin.create().routes(() -> {
         get("/demons", DemonController::getAll);
         post("/demons", DemonController::create);
         get("/", ctx -> ctx.result("Hell-On-World"));

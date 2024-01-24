@@ -9,7 +9,7 @@ import java.util.List;
 
 public class DemonController {
 
-    static List<String> demons = new ArrayList<>(Arrays.asList("Minister_Pinoccio", "Angry_Duck", "Hungry_Kristy"));
+    final static List<String> demons = new ArrayList<>(Arrays.asList("Minister_Pinoccio", "Angry_Duck", "Hungry_Kristy"));
 
     public static void create(Context ctx) {
         String demonName = ctx.queryParam("demonname");

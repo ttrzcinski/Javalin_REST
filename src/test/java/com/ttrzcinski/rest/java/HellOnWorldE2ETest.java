@@ -1,6 +1,5 @@
 package com.ttrzcinski.rest.java;
 
-import com.ttrzcinski.rest.java.HellApp;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -9,9 +8,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class HellOnWorld_E2ETest {
+public class HellOnWorldE2ETest {
 
-    private HellApp app = new HellApp(); // inject any dependencies you might have
+    private final HellApp app = new HellApp(); // inject any dependencies you might have
 
     // TODO UNREM, WHEN FIXED: org.openqa.selenium.WebDriverException: unknown error: DevToolsActivePort file doesn't exist
     @Disabled()

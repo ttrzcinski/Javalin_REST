@@ -10,9 +10,9 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 import static org.mockito.Mockito.verify;
 
-public class HellOnWorld_UniTest {
+public class HellOnWorldUnitTest {
 
-    private Context ctx = mock(Context.class);
+    private final Context ctx = mock(Context.class);
 
     @Disabled
     @Test
