@@ -14,7 +14,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.compiler.source>12</maven.compiler.source>
         <maven.compiler.target>12</maven.compiler.target>
-        <maven.compiler.plugin>2.4</maven.compiler.plugin>
+        <maven.compiler.plugin>3.12.1</maven.compiler.plugin>
         <maven.shade.plugin>3.1.0</maven.shade.plugin>
         <dockerfile.maven.plugin>1.2.2</dockerfile.maven.plugin>
         <javalin.version>5.6.3</javalin.version>
