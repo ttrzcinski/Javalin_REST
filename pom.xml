@@ -39,6 +39,12 @@
             <version>1.4.14</version>
             <scope>test</scope>
         </dependency>
+        <!-- Fixes XXE injector -->
+        <dependency>
+            <groupId> com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.13.5</version>
+        </dependency>
         <!-- Core library -->
         <dependency>
             <groupId>io.javalin</groupId>
@@ -85,7 +91,7 @@
             <version>${konghg.unirest}</version>
             <scope>test</scope>
         </dependency>
-        <!-- End to end testing with Selenium -->
+        <!-- End-to-End testing with Selenium -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-chrome-driver</artifactId>
@@ -97,12 +103,6 @@
             <artifactId>webdrivermanager</artifactId>
             <version>${bonigarcia.webdrivermanager}</version>
             <scope>test</scope>
-        </dependency>
-        <!-- Fixes XXE injector -->
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-            <version>2.13.2.2</version>
         </dependency>
     </dependencies>
 
