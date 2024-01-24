@@ -19,8 +19,8 @@
         <dockerfile.maven.plugin>1.2.2</dockerfile.maven.plugin>
         <javalin.version>5.6.3</javalin.version>
         <mockito.version>3.7.7</mockito.version>
-        <junit.version>5.7.1</junit.version>
-        <konghg.unirest>3.4.00</konghg.unirest>
+        <junit.version>5.10.1</junit.version>
+        <konghg.unirest>3.14.5</konghg.unirest>
         <assertj.core>3.11.1</assertj.core>
         <io.mockk>1.9.3</io.mockk>
         <slf4j.version>2.0.7</slf4j.version>
@@ -44,6 +44,11 @@
             <groupId> com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
             <version>2.13.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.13</version>
         </dependency>
         <!-- Core library -->
         <dependency>
