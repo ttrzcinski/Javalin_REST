@@ -8,7 +8,7 @@ Represents dockerized Javalin REST microsevice with GET example in.
 https://javalin.io/tutorials/docker
 
 # Parts:
-- JDK 11
+- JDK 12
 - Javalin
 - Docker
 

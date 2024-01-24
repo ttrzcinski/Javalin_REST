@@ -23,7 +23,7 @@ jobs:
       - uses: actions/setup-java@v2
         with:
           distribution: 'adopt' # See 'Supported distributions' for available options
-          java-version: '11'  
+          java-version: '12'
       - name: Run Tests
         run: mvn test --batch-mode --fail-at-end
       - name: Publish Test Report
