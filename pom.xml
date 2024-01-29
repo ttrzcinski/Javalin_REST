@@ -17,7 +17,7 @@
         <maven.compiler.plugin>2.4</maven.compiler.plugin>
         <maven.shade.plugin>3.1.0</maven.shade.plugin>
         <dockerfile.maven.plugin>1.2.2</dockerfile.maven.plugin>
-        <javalin.version>5.6.3</javalin.version>
+        <javalin.version>6.0.0</javalin.version>
         <mockito.version>3.7.7</mockito.version>
         <junit.version>5.10.1</junit.version>
         <konghg.unirest>3.14.5</konghg.unirest>
@@ -166,8 +166,7 @@
                             <shadedArtifactAttached>true</shadedArtifactAttached>
                             <transformers>
                                 <!-- add Main-Class to manifest file -->
-                                <transformer
-                                        implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <mainClass>com.ttrzcinski.rest.java.HellOnWorld</mainClass>
                                 </transformer>
                             </transformers>
